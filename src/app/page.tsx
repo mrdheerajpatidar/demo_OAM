@@ -89,9 +89,15 @@ export default function Home() {
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <div className="flex flex-col items-center">
-            <span className="rounded-full bg-primary/20 backdrop-blur-md px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary border border-primary/30">
-              ⚡ INDORE'S PIONEERING SALES & COMPARISON PLATFORM
-            </span>
+            <a
+              href="https://demo-oam.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-primary/20 backdrop-blur-md px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary border border-primary/30 hover:bg-primary/30 transition-all duration-300 cursor-pointer"
+            >
+              <ShieldCheck className="h-4.5 w-4.5 text-primary" />
+              <span>RERA Verified Properties Only</span>
+            </a>
             <h1 className="mt-6 max-w-4xl text-4xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl leading-tight">
               Don't Just Browse. <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-light via-primary to-gold">
@@ -111,6 +117,15 @@ export default function Home() {
                 Access Curated Catalog
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
+              <a
+                href="https://demo-oam.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 rounded-full bg-white text-dark px-8 py-4 text-xs font-black uppercase tracking-wider hover:bg-light transition-all shadow-md"
+              >
+                <ShieldCheck className="h-4 w-4 text-primary" />
+                RERA Verified Properties Only
+              </a>
               <Link
                 href="/contact"
                 className="flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 px-8 py-4 text-xs font-black uppercase tracking-wider text-white hover:bg-white hover:text-dark transition-all"
